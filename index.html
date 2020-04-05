@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+	<meta charset="UTF-8">
 	<title>Neko Proyect</title>
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+	<header>
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-auto">
+					<h1>Neko Proyect</h1>
+				</div>
+				<div class="col-auto">
+					<div class="avatar-container" data-target="#profileOptions" data-toggle="modal">
+						<img src="img/chibicat7.png" alt="">
+						<i class="fas fa-cogs"></i>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="profileOptions" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+
+			      <div class="modal-header">
+			        <h5 class="modal-title">Opciones</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        	<ul class="profile-options-list">
+			        		<li><a href="#"><i class="fas fa-user"></i>Mi Perfil</a></li>
+			        		<li><a href="#"><i class="fas fa-address-card"></i>Mi Dirección</a></li>
+			        		<li><a href="#"><i class="fas fa-credit-card"></i>Mis Tarjetas</a></li>
+			        		<li><a href="#" class="text-danger"><i class="fas fa-window-close"></i>Cerrar Sesión</a></li>
+			        	</ul>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+		</div>
+
+	</header>
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
